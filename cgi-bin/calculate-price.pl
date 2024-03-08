@@ -2,9 +2,9 @@
 
 use strict;
 use warnings;
-
 use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
+
 print "Content-Type: text/html\n\n";
 
 #### Read form data
@@ -20,7 +20,7 @@ my $total = $subtotal + $tax;
 
 #### display results
 print "<h2>ECommerce platform</h2>";
-print "<p>Here is your order: </p>";
+print "<p>Hi $user, here is your order: </p>";
 print "<p>Item ordered: $item, unit price: \$$price, quantity: $qty </p>";
 print "<p>Subtotal: \$$subtotal </p>";
-print "<p>Sales tax: \$%.2f </p>", $tax;
+printf "<p>Sales tax: \$%.2f </p>", $tax;

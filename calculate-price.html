@@ -7,17 +7,20 @@
   </head>
   <body>
     <form action="cgi-bin/calculate-price.pl" method="post">
-      <input name="username" placeholder="Username" />
-      <input name="item" placeholder="Item" />
+      <input name="username" placeholder="Username" /><br />
+      <input name="item" placeholder="Item" /><br />
       <input
         name="quantity"
+        value="0"
         type="range"
         step="1"
         min="0"
         max="100"
         placeholder="Quantity"
       />
-      <input name="price" type="number" min="0" placeholder="Price" />
+      <br />
+      <input name="price" type="number" min="0" placeholder="Price" /><br />
+      <button type="submit">Calculate</button>
     </form>
   </body>
 </html>
