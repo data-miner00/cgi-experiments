@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Costs</title>
+  </head>
+  <body>
+    <form action="cgi-bin/calculate-price.pl" method="post">
+      <input name="username" placeholder="Username" />
+      <input name="item" placeholder="Item" />
+      <input
+        name="quantity"
+        type="range"
+        step="1"
+        min="0"
+        max="100"
+        placeholder="Quantity"
+      />
+      <input name="price" type="number" min="0" placeholder="Price" />
+    </form>
+  </body>
+</html>
