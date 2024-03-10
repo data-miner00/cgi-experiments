@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/bash -x
 
 echo "Content-Type: text/html"
 echo ""
