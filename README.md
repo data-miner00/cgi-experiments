@@ -12,6 +12,14 @@ perl -v
 
 Next, the [CGI Module](https://metacpan.org/dist/CGI/view/lib/CGI.pod) is required for CGI related features. Use cpanm for faster installations.
 
+## Change script to executable
+
+Make sure that the CGI scripts are executable, otherwise they will not work.
+
+```
+sudo chmod +x myscript.pl
+```
+
 ## Resources
 
 - [Metacpan](https://metacpan.org/)
